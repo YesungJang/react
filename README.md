@@ -86,3 +86,20 @@ state : 데이터의 저장장소
 return같은 개념 함수는 계산을 완료했는데 데이터를 표시갱신이 안되어있음
 -> rerendering이 필요
 리액트의 좋은 점 : 이전에 렌더링된 컴포넌트는 어떤거였는지 확인 후 렌더링될 컴포넌트를 확인 후 다른 부분만 파악
+
+## 2.2 setState part one
+
+리렌더링을 까먹지 않기 위해선?->reactjs에서 데이터를 보관하고 리렌더링하는 방법을 사용(함수를 불러 줄 필요 없음)
+어디에 데이터를 담으면 되는 것인가? -> useState
+2개의 array를 담음
+first element : 시작
+second element : function
+
+어떻게 하면 array에서 꺼내서 배열할 수 있을까? ->
+
+## 2.3 setState part two
+
+useState를 쓰면 array를 주는데
+첫번째 요소는 시작값
+두번째 요소는 값을 바꿀 때 사용할 modifier 수정자
+리렌더링을 하기 위해 한번 더 호출 -> react에선set을 붙이면 업데이트 후 리렌더링된다!!java같음

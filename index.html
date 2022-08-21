@@ -11,21 +11,19 @@
   <script type="text/babel">
     const root = document.getElementById("root");
 
-    function render() {
-      ReactDOM.render(<Container />, root);
+    function App() {
+      const [counter, setCounter] = React.useState(0);
+      const onClick = () => {
+        // modifier에 값을 부여하고 modifier는 그 값으로 업데이트 후 리렌더링
+        setCounter(counter + 1);
+      };
+      return (
+        <div>
+          <h3>Total clicks : {counter}</h3>
+          <button onClick={onClick}>click me</button>
+        </div>
+      );
     }
-    let counter = 0;
-    function countUp() {
-      counter = counter + 1;
-      render();
-    }
-    const Container = () => (
-      <div>
-        <h3>Total clicks : {counter}</h3>
-        <button onClick={countUp}>click me</button>
-      </div>
-    );
-
-    render();
+    ReactDOM.render(<App />, root);
   </script>
 </html>
