@@ -67,3 +67,18 @@ https://unpkg.com/@babel/standalone/babel.min.js
 ```
 
 사용하는 script에 `type="text/babel"`을 추가
+
+## 1.7 JSX part 2
+
+function 으로 표현 가능
+대문자여야만한다
+소문자면 html태그라고 인식
+arrow function도 사용 가능
+<strong>독자적으로 만든 components는 반드지 대문자로 시작해야 한다!!</strong>
+
+# 2. State
+
+## 2.1 Understanding State
+
+state : 데이터의 저장장소
+-> 카운터를 state로 할 수 있다
