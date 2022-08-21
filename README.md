@@ -38,3 +38,32 @@ render -> 사용자한테 보여준다
 
 버튼(property)에 eventlistener를 넣는게 가능
 리액트는 인터렉티브를 위해 만들어 졌다
+
+## 1.5 Recap 복습
+
+react component에 3가지 argument
+
+1. element
+2. property
+3. content
+
+property에 eventlistener를 넣을 수 있다
+
+## 1.6 JSX
+
+Javascript를 확장한 문법
+브라우저가 jsx를 이해할 수 있도록 설치가 필요-> 바벨이 필요
+바벨 : 코드의 변환
+jsx로 적은 코드를 브라우저가 이해할 수 있도록 변환
+
+```
+https://babeljs.io/repl
+```
+
+바벨 트란스폼 스크립트를 import
+
+```
+https://unpkg.com/@babel/standalone/babel.min.js
+```
+
+사용하는 script에 `type="text/babel"`을 추가
